@@ -8,6 +8,8 @@ import styles from './page.module.css';
 
 type Params = { uid: string };
 
+//{uid.match(/\d+/)?.[0]}
+
 export default async function Page({ params }: { params: Promise<Params> }) {
   const { uid } = await params;
   const client = createClient();
@@ -18,9 +20,7 @@ export default async function Page({ params }: { params: Promise<Params> }) {
   return (
     <div className="container">
       <div className={styles.wrapper}>
-        <h4 className={styles.wp__title}>
-          Tasks of WP {uid.match(/\d+/)?.[0]}
-        </h4>
+        <h4 className={styles.wp__title}>Tasks of WP</h4>
         <div className={styles.tasks}>
           {WP1.map((item) => (
             <div className={styles.task} key={item.id}>
@@ -37,9 +37,7 @@ export default async function Page({ params }: { params: Promise<Params> }) {
             </div>
           ))}
         </div>
-        <h4 className={styles.wp__title}>
-          Results of WP {uid.match(/\d+/)?.[0]}:{' '}
-        </h4>
+        <h4 className={styles.wp__title}>Results of WP</h4>
         <div className={styles.results}>
           <SliceZone slices={page.data.slices} components={components} />
         </div>

@@ -25,9 +25,15 @@
 							[
 								"task_result",
 								{
-									"__TYPE__": "FieldContent",
-									"value": "distant",
-									"type": "Text"
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ea aute dolore ex Lorem cupidatat cupidatat enim est aliquip."
+											}
+										}
+									]
 								}
 							]
 						]

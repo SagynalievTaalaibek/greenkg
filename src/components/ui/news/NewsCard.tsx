@@ -18,7 +18,7 @@ const NewsCard = () => {
           <strong>Дата: </strong>
           26.01.2025
         </p>
-        <Link className={styles.card__btn} href={`news/`}>
+        <Link className={styles.card__btn} href={`#`}>
           <ArrowOutwardIcon />
         </Link>
       </div>

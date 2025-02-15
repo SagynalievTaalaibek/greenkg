@@ -33,10 +33,12 @@
                 }
               },
               "task_result": {
-                "type": "Text",
+                "type": "StructuredText",
                 "config": {
                   "label": "Task Result",
-                  "placeholder": ""
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,em,hyperlink,strong"
                 }
               }
             }

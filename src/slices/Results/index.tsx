@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useState } from 'react';
 import { Content } from '@prismicio/client';
-import { SliceComponentProps } from '@prismicio/react';
+import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
 import {
   Accordion,
   AccordionDetails,
@@ -38,6 +38,8 @@ function CustomTabPanel({ children, value, index, ...other }: TabPanelProps) {
 
 const Results: FC<ResultsProps> = ({ slice }) => {
   const [activeTabs, setActiveTabs] = useState<{ [key: string]: number }>({});
+
+  console.log(slice);
 
   const partnerId = slice.primary.name_partner || 'wp';
 
