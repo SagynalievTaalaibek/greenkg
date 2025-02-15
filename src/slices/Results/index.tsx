@@ -12,7 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material';
-
+import styles from './page.module.css';
 /**
  * Props for `Results`.
  */
@@ -92,7 +92,9 @@ const Results: FC<ResultsProps> = ({ slice }) => {
                   value={activeTabs[partnerId] ?? 0} // Обрабатываем undefined
                   index={i}
                 >
-                  {/*<p className={styles.tab__text}>{task.task_result}</p>*/}
+                  <div className={styles.tab__text}>
+                    <PrismicRichText field={task.task_result} />
+                  </div>
                 </CustomTabPanel>
               ))}
             </Box>
