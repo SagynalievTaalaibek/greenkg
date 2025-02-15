@@ -1,4 +1,3 @@
-import { WP1 } from '@/constans/wp';
 import { ArrowRight } from '@mui/icons-material';
 import { createClient } from '@/prismicio';
 import { notFound } from 'next/navigation';
@@ -7,8 +6,6 @@ import { components } from '@/slices';
 import styles from './page.module.css';
 
 type Params = { uid: string };
-
-//{uid.match(/\d+/)?.[0]}
 
 export default async function Page({ params }: { params: Promise<Params> }) {
   const { uid } = await params;
@@ -20,10 +17,10 @@ export default async function Page({ params }: { params: Promise<Params> }) {
   return (
     <div className="container">
       <div className={styles.wrapper}>
-        <h4 className={styles.wp__title}>Tasks of WP</h4>
+        <h4 className={styles.wp__title}>Tasks of {page.data.title}</h4>
         <div className={styles.tasks}>
-          {WP1.map((item) => (
-            <div className={styles.task} key={item.id}>
+          {page.data.tasks.map((item, i) => (
+            <div className={styles.task} key={`task-${i}`}>
               <ArrowRight
                 sx={{
                   fontSize: {
@@ -33,11 +30,11 @@ export default async function Page({ params }: { params: Promise<Params> }) {
                   },
                 }}
               />
-              {item.text}
+              {item.task}
             </div>
           ))}
         </div>
-        <h4 className={styles.wp__title}>Results of WP</h4>
+        <h4 className={styles.wp__title}>Results of {page.data.title}</h4>
         <div className={styles.results}>
           <SliceZone slices={page.data.slices} components={components} />
         </div>
