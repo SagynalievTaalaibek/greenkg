@@ -25,9 +25,15 @@
 							[
 								"task_result",
 								{
-									"__TYPE__": "FieldContent",
-									"value": "distant",
-									"type": "Text"
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Deserunt occaecat id sint amet aliqua id elit commodo cupidatat consequat ullamco tempor do sunt dolore. Minim ex consectetur sit."
+											}
+										}
+									]
 								}
 							]
 						]

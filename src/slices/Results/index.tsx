@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useState } from 'react';
 import { Content } from '@prismicio/client';
-import { SliceComponentProps } from '@prismicio/react';
+import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
 import {
   Accordion,
   AccordionDetails,
@@ -91,7 +91,9 @@ const Results: FC<ResultsProps> = ({ slice }) => {
                   value={activeTabs[partnerId] ?? 0} // Обрабатываем undefined
                   index={i}
                 >
-                  <p className={styles.tab__text}>{task.task_result}</p>
+                  <div className={styles.tab__text}>
+                    <PrismicRichText field={task.task_result} />
+                  </div>
                 </CustomTabPanel>
               ))}
             </Box>

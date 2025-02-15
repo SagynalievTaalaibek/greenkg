@@ -94,12 +94,12 @@ export interface ResultsSliceDefaultPrimaryResultPartnerItem {
   /**
    * Task Result field in *Results → Default → Primary → Result*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
    * - **API ID Path**: results.default.primary.result_partner[].task_result
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  task_result: prismic.KeyTextField;
+  task_result: prismic.RichTextField;
 }
 
 /**
