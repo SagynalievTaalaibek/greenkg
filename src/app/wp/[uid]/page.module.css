@@ -25,6 +25,10 @@
     padding-bottom: 30px;
 }
 
+.tab__text {
+    font-size: 20px;
+}
+
 
 @media (max-width: 1000px) {
     .wp__title {
