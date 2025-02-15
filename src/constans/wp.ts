@@ -42,163 +42,47 @@ export const WP1 = [
   },
 ];
 
-export const PARTNERS = [
+export const test = [
   {
-    id: uuidv4().toString(),
     name: 'I. Razzakov Kyrgyz State Technical University',
-    results: [
-      { task_name: 'TP1', task_result: 'Result 1' },
-      { task_name: 'TP2', task_result: 'Result 2' },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'I.K. Akhunbaev Kyrgyz State Medical Academy',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Medical research completed',
-      },
-      {
-        task_name: 'TP2',
-        task_result: 'New study published',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'I. Arabaev Kyrgyz State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Educational program updated',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Batken State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Implemented new curriculum',
-      },
-      {
-        task_name: 'TP2',
-        task_result: 'Student exchange program initiated',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'K. Karasaev Bishkek State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Joint project with EU universities',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'International Higher School of Medicine',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Clinical trials conducted',
-      },
-      {
-        task_name: 'TP2',
-        task_result: 'New medical protocols developed',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'S. Naamatov Naryn State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Research collaboration with EU partners',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Osh State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Developed AI-based learning tools',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'K. Tynystanov Issyk-Kul State University',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Environmental studies completed',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Ministry of Education and Science of the Kyrgyz Republic',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'National education strategy developed',
-      },
-      {
-        task_name: 'TP2',
-        task_result: 'New legislation proposed',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Capacity Building Consulting Group',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Conducted leadership training',
-      },
-      {
-        task_name: 'TP2',
-        task_result: 'Published whitepaper on policy reforms',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Hamburg University of Applied Sciences (Germany)',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Joint research paper published',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Vilnius University (Lithuania)',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'New digital learning platform launched',
-      },
-    ],
   },
   {
-    id: uuidv4().toString(),
     name: 'Diplomatic Academy of the Ministry of Foreign Affairs of the Kyrgyz Republic',
-    results: [
-      {
-        task_name: 'TP1',
-        task_result: 'Hosted international conference',
-      },
-    ],
   },
 ];
