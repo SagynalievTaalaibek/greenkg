@@ -40,6 +40,8 @@ function CustomTabPanel({ children, value, index, ...other }: TabPanelProps) {
 const Results: FC<ResultsProps> = ({ slice }) => {
   const [activeTabs, setActiveTabs] = useState<{ [key: string]: number }>({});
 
+  console.log(slice);
+
   const partnerId = slice.primary.name_partner || 'wp';
 
   const handleChange = (newValue: number) => {
