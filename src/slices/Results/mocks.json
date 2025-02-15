@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"name_partner": {
+				"__TYPE__": "FieldContent",
+				"value": "drink",
+				"type": "Text"
+			},
+			"result_partner": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"task_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "position",
+									"type": "Text"
+								}
+							],
+							[
+								"task_result",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "distant",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
